@@ -7,6 +7,12 @@ from pyriot.exceptions import RiotRequestException, SummonerNotFound
 @dataclass
 class Summoner(ApiModel):
     name: str
+    summoner_level: float
+    profile_icon_id: int
+    revision_date: int
+    id: str
+    puuid: str
+    account_id: str
 
     def __init__(self):
         pass
